@@ -3,7 +3,7 @@ const express = require('express');
 
 const server = express();
 server.use(express.json())
-server.use(express.static(__dirname + '/public'))
+server.use(express.static('./public'))
 
 server.get('/getAnims', (req, res) => {
     
